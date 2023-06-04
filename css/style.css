@@ -1,0 +1,849 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBFB;
+    color: rgb(13, 13, 14);
+}
+
+#imagem{
+    margin-top: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 7%;
+}
+
+#tituloHome{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 620%;
+    font-weight: bold;
+    margin-left: -2%;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(21, 22, 24), rgb(55, 56, 56));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
+.lupa{
+    width: 50px;
+    border-radius: 60%;
+    cursor: pointer;
+}
+
+.lupa:hover{
+    opacity: 80%;
+}
+
+#logo{
+    width: 4%;
+    height: 5%;
+    margin-bottom: 2%;
+}
+
+p{
+    margin-left: 7%;
+    font-family: 'Scope One', serif;
+    font-size: 140%;
+}
+
+#btnHome{
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 170%;
+    gap: 4%;
+    color: #fff;
+    background-color: black;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding-right: 3%;
+    transition: 400ms;
+}
+
+button:hover{  
+    transition: 500ms;
+    background-color: #242323;
+    box-shadow: 1px 2px 9px #313030;
+}
+
+#centro{
+    display: flex;
+    justify-content: left;
+}
+
+#esquerda{
+    width: 650px;
+}
+
+.txt{
+    font-size: 210%;
+    word-break: break-word;
+    font-weight: none;
+    width: 100%;
+    font-family: 'Scope One', serif;
+}
+
+svg{
+    height: 120px;
+    padding: 0;
+    margin-top: -80px;
+    font-family: 'Scope One', serif;
+}
+
+#espaco{
+    margin-left: 8%;
+}
+
+#sherlock{
+    position:fixed;
+    width: 24rem;
+    bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Animação da Wave */
+@keyframes float{
+	0%,100%{
+		box-shadow:0 5px 15px 0 #fff;
+		transform:translatey(0)
+	}
+	50%{
+		box-shadow:0 25px 15px 0 #fff;
+		transform:translatey(-20px)
+	}
+}
+
+#wave{
+    margin-bottom: -60px;
+    width: 60%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+@media screen and (max-width: 779px) {
+    #sherlock{
+        width: 22rem;
+    }    
+    .txt{
+        font-size: 200%;
+    }
+    #espaco{
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    #sherlock{
+        width: 20rem;
+    } 
+    .txt{
+        font-size: 190%;
+    }
+    #espaco{
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .txt{
+        font-size: 158%;
+    }
+    #espaco{
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .txt{
+        font-size: 160%;
+    }
+    #espaco{
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #sherlock{
+        width: 17rem;
+    } 
+    .txt{
+        font-size: 130%;
+    }
+    #espaco{
+        margin-left: 3%;
+    }
+    button{
+        width: 140px;
+        font-size: 100%;
+    }
+    h1{
+        font-size: 500%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #sherlock{
+        width: 16rem;
+    } 
+    button{
+        width: 150px;
+        font-size: 110%;
+    }
+    #lupa{
+        width: 35px;
+    }
+    h1{
+        font-size: 480%;
+
+    }
+    .txt{
+        padding-right: 3%;
+        font-size: 115%;
+    }
+    #espaco{
+        margin-left: 4%;
+    }
+    #esquerda{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 393px){
+    #sherlock{
+        width: 16rem;
+    }
+    .txt{
+        font-size: 100%;
+    }
+    button{
+        margin-top: 5%;
+        font-size: 110%;
+    }
+    #esquerda{
+        width: 540px;
+    }
+    h1{
+        font-size: 470%;
+    }
+    button{
+        width: 135px;
+        font-size: 99%;
+    }
+    h1{
+        font-size: 480%;
+    }
+    #esquerda{
+        width: 200px;
+    }
+}
+
+/*Página das cidades (escolha)*/
+h2, h3{
+    color: #fff;
+}
+
+h2{
+    margin-top: 6%;
+    font-size: 450%;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#titulos{
+   
+    margin-left: 32%;
+}
+
+.circulo{
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#circulo-1{
+    background-image: url("../img/portland.png");
+    background-size: 120%;
+    transition: 700ms;
+}
+
+#circulo-2{
+    background-image: url("../img/detroit.png");
+    background-size: 120%;
+    transition: 700ms;
+}
+
+#circulo-3{
+    background-image: url("../img/veneza.png");
+    background-size: 100%;
+    transition: 700ms;
+}
+
+#circulo-4{
+    background-image: url("../img/saint-petersburg.png");
+    background-size: 120%;
+    transition: 700ms;
+}
+
+#circulo-1:hover, #circulo-2:hover, #circulo-3:hover, #circulo-4:hover{
+    transition: 700ms;   
+    box-shadow: 1px 8px 9px #fff;
+    transform: scale(1.1);
+}
+
+#circulos{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+}
+
+.cidades{
+    color: rgb(17, 16, 16);
+    background-color: #fff;
+    padding: 1%;
+    padding-left: 3%;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caixa{
+    width: 18%;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 17%;
+    margin-left: 40%;
+    margin-right: 40%;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 1px 7px 6px rgba(0, 0, 0, 0.377);
+}
+
+.txt-infos{
+    font-size: 125%;
+    padding: 4%;
+}
+
+#fechar{
+    width: 40px;
+    height: 40px;
+    padding: 2%;
+    cursor: pointer;
+}
+
+#div-fechar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulo-cidade{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 135%;
+    text-align: center;
+}
+
+#div-sh{
+    display: flex;
+    justify-content: center;
+}
+
+#icon-faca, #icon-opera, #icon-misterio{
+    width: 60px;
+    height: 70px;
+}
+
+#icon-mulher{
+    width: 80px;
+    height: 70px;
+}
+
+/*CENÁRIO 1 - SAINT PETERBURSG*/
+.topo-jogo{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1%;
+    background-color: #fff;
+    margin-bottom: 1%;
+}
+
+#btnDica, #botaoDica{
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    background-color: black;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-right: 5%;
+    padding-right: 3%;
+    transition: 400ms;
+    margin-top: 1.5%;
+    height: 40px;
+    font-size: 110%;
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    transition: 700ms;
+}
+
+#btnDica:hover, #botaoDica{
+    transition: 500ms;
+    background-color: #141414;
+    box-shadow: none;
+}
+
+.icon-dica{
+    width: 15%;
+    border-radius: 100%;
+}
+
+.cenarios{
+    background-color: black;
+}
+
+.caixa-jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jogo{
+    background-image: url("../img/fundinho.png");
+    background-size: 100%;
+    width: 70%;
+    height: 80vh;
+    background-position: center;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+
+#jogoo{
+    background-image: url("../img/cenario-2.png");
+    background-size: 100%;
+    width: 70%;
+    height: 80vh;
+    background-position: center;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+
+#figurante{
+    width: 34%;
+    margin-left: -5%;
+}
+
+.balao{
+    background-color: #fff;
+    width: 22%;
+    height: 20%;
+    border-radius: 15px;
+    margin-left: -13%;
+}
+
+.mensagem-balao{
+    display: flex;
+    padding: 3%;
+    font-size: 115%;
+
+}
+
+.caixa-itens{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -28%;
+}
+
+.passar-mensagem{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#objsEncontrados, #objetosEncontrados{
+    color: #0e0c0c;
+    font-weight: bold;
+    width: 250px;
+    margin-top: 7%;
+}
+
+.alinhar-pontos{
+    display: flex;
+    flex-direction: row;
+}
+#sutia{
+    width: 6%;
+    position: absolute;
+    left: 20%;
+    right: 10%;
+    bottom: 35%;
+    opacity: 40%;
+}
+
+#sangue{
+    width: 4%;
+    position: absolute;
+    left: 54%;
+    right: 10%;
+    bottom: 32.3%;
+    opacity: 40%;
+}
+
+#bebida{
+    width: 2%;
+    position: absolute;
+    left: 68%;
+    right: 10%;
+    bottom: 30%;
+    opacity: 60%;
+}
+
+#chaves{
+    width: 1.5%;
+    position: absolute;
+    left: 30%;
+    right: 10%;
+    bottom: 42%;
+    opacity: 67%;
+}
+
+#shDica{
+    width: 30%;
+    border-radius: 40px;
+}
+
+#boxMeio{
+    background-color: #fff;
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3%;
+    border-radius: 40px;
+    box-shadow: 1px 4px 9px #fff;
+    position: absolute;
+    bottom: 40%;
+    left: 34%;
+}
+
+ #img-chaves{
+    width: 60px;
+}
+
+#img-sangue{
+    width: 90px;
+}
+
+#img-bebida{
+    width: 50px;
+}
+
+#img-sutia{
+    width: 100px;
+}
+
+#boxFinal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 30vh;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 9px;
+    box-shadow: 1px 8px 9px #994d4d9a;
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+}
+
+#boxImgs{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-direction: row;
+}
+
+#txtFinal{
+    font-size: 160%;
+    text-align: center;
+    margin-left: -3px;
+    font-weight: bold;
+}
+
+/*CENÁRIO 2 - DETROIT*/
+
+#cenarioDois{
+    background-color: #000000;
+}
+
+#txtCharadas{
+    color: #fff;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 500%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.divCharada{
+    width: 40%;
+    height: 50%;
+    background-color: #FFFBFB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textoCharada{
+    font-size: 160%;
+    padding-right: 4%;
+    margin-top: 3%;
+}
+
+#fosforo, #lampada, #vela, #lareira{
+    width: 50px;
+    height: 50px;
+}
+
+.divOpcoes{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-left: 7%;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.divMaioral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcoes{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.divOpcoes:hover{
+    transition: 400ms;
+    background-color: #14141409;
+    width: 380px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+}
+
+.textoNivel{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 120%;
+    margin-left: 7%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(-6px)
+	}
+	50%{
+		transform:translatey(0)
+	}
+}
+
+#corpo{
+    width: 15%;
+    left: 10%;
+    position: absolute;
+}
+
+.sherlockRosto{
+    width: 30%;
+    border-radius: 60%;
+    margin-left: 2%;
+}
+
+.divSherlock{
+    width: 25%;
+    height: 20%;
+    border-radius: 5px;
+    position: absolute;
+    left: 38%;
+    right: 35%;
+    bottom: 60%;
+    box-shadow: 1px 3px 9px #00000077;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color: #fff;
+}
+
+#inputCharada{
+    height: 30px;
+    width: 40%;
+    margin-left: 7%;
+    outline: 0;
+    border-radius: 5px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+}
+
+#btnEnviar{
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    background-color: black;
+    width: 16%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 107%;
+    cursor: pointer;
+}
+
+form{
+    margin-bottom: 3%;
+}
+
+#txtEnigma{
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1%;
+}
+
+#divSuspeitos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+    margin-left: -3%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 115%;
+}
+
+#suspeitos{
+    margin-left: -0.5%;
+}
+
+#suspeitoUm, #suspeitoDois, #suspeitoTres{
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#suspeitoUm:hover, #suspeitoDois:hover, #suspeitoTres:hover{
+    transition: 700ms;
+    background-color: #020202fb;
+    padding: 1%;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#txtErro{
+    padding-right: 2%;
+}
+
+/*CENÁRIO TRÊS*/
+#celular{
+    width: 4%;
+    position: absolute;
+    left: 18%;
+    bottom: 28%;
+    opacity: 55%;
+}
+
+#remedio{
+    width: 3%;
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    opacity: 60%;
+}
+
+#telefone{
+    width: 4%;
+    position: absolute;
+    left: 34%;
+    bottom: 18%;
+    opacity: 59%;
+}
+
+#sanguee{
+    width: 4%;
+    position: absolute;
+    left: 67%;
+    bottom: 50%;
+    opacity: 40%;
+}
+
+#cartao{
+    width: 2.5%;
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
+    opacity: 70%;
+}
+
+#sapato{
+    width: 4%;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    opacity: 40%;
+}
+
+#bolsa{
+    width: 3%;
+    position: absolute;
+    left: 70%;
+    bottom: 35%;
+    opacity: 80%;
+}
+
+#img-cartao, #img-sanguee, #img-sapato, #img-remedio, #img-telefone, #img-bolsa, #img-celular{
+    width: 7%;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Capítulo I</title>
+</head>
+<body class="cenarios" onload="sherlock()">
+    <header class="topo-jogo">
+        <div class="alinhar-pontos">
+            <p id="objsEncontrados">Objetos encontrados: </p>
+            <p id="objetosEncontrados"></p>
+        </div>
+        <button id="btnDica" onclick="pedirDica()">
+            <img class="icon-dica" src="img/dica.jpg" alt="">
+            Pedir dica
+        </button>
+    </header>
+
+    <main>
+        <div class="caixa-jogo">
+            <div id="jogo"></div>
+        </div>
+    </main>
+
+    <script src="cenarioUm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>

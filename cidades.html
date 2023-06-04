@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Cidades</title>
+</head>
+
+<body style="background-color: #000;">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <header>
+        <div id="titulos" data-aos="fade-right">
+            <h2>Escolha uma cidade</h2>
+            <svg id="formato" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <path id="path">
+                    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s"
+                        repeatCount="indefinite" />
+                </path>
+                <text fill='#fefefe' class="size">
+                    <textPath class="txt" xlink:href="#path">Investigue com atenção e procure por pistas...
+                </text>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div id="circulos" data-aos="zoom-out">
+            <div class="alinha-txt">
+                <img class="lupa" src="img/lupa.png" alt="" onclick="cidadeUm()">
+                <a href="cenario-1.html">
+                    <div class="circulo" id="circulo-1"></div>
+                </a>
+                <p class="cidades">Saint Petersburg</p>
+            </div>
+            <div class="alinha-txt">
+                <img class="lupa" src="img/lupa.png" onclick="cidadeDois()">
+                <a href="cenario-2.html">
+                    <div class="circulo" id="circulo-2"></div>
+                </a>
+                <p class="cidades">Detroit</p>
+
+            </div>
+            <div class="alinha-txt">
+                <img class="lupa" src="img/lupa.png" onclick="cidadeTres()">
+                <a href="cenario-3.html">
+                    <div class="circulo" id="circulo-4"></div>
+                </a>
+                <p class="cidades">Portland</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
