@@ -11,7 +11,6 @@ Para saber mais sobre o caso na cidade, clique no ícone.
 <br>
 ![1](https://github.com/TrinityDN/jogo-detetive/assets/111662820/d0627cc1-fa4f-4d86-a14d-4d8f4bcfae5f)
 <br>
-![3](https://github.com/TrinityDN/jogo-detetive/assets/111662820/b06caf92-4461-4780-b381-34d033ce2617)
 <br>
 Detalhes sobre o jogo:
 <br>
