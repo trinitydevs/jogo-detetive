@@ -3,11 +3,11 @@ Jogo temático Sherlock Holmes com JS
 <br>
 ![6](https://github.com/TrinityDN/jogo-detetive/assets/111662820/7e75ac1f-5a98-4754-8596-2a8dd8e8dafd)
 <br>
-![7](https://github.com/TrinityDN/jogo-detetive/assets/111662820/01bbd9a5-2c53-47d3-aa5c-93bb01cb71c6)
+![8](https://github.com/TrinityDN/jogo-detetive/assets/111662820/d6aa1368-40cd-42f0-9159-e798c812a132)
 <br>
 Para saber mais sobre o caso na cidade, clique no ícone.
 <br>
-![1](https://github.com/TrinityDN/jogo-detetive/assets/111662820/8855d034-2be1-4623-9ffa-2bfe41deb1de)
+![1](https://github.com/TrinityDN/jogo-detetive/assets/111662820/d0627cc1-fa4f-4d86-a14d-4d8f4bcfae5f)
 <br>
 ![3](https://github.com/TrinityDN/jogo-detetive/assets/111662820/b06caf92-4461-4780-b381-34d033ce2617)
 <br>
