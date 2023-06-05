@@ -1,6 +1,7 @@
 # jogo-detetive
 Jogo temático Sherlock Holmes com JS
 <br>
+<br>
 ![6](https://github.com/TrinityDN/jogo-detetive/assets/111662820/7e75ac1f-5a98-4754-8596-2a8dd8e8dafd)
 <br>
 ![8](https://github.com/TrinityDN/jogo-detetive/assets/111662820/d6aa1368-40cd-42f0-9159-e798c812a132)
